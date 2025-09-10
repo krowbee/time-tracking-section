@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./index.css">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <script defer src="./index.js"></script>
+</head>
+
+<body>
+  <main class="cards-section">
+    <div class="cards">
+    <div class="cards__card profile-card">
+      <div class="cards__profile-header">
+        <img src="./images/image-jeremy.png" class="cards__profile-image" width="65px">
+        <div class="cards__profile-info">
+          <span>Report for</span>
+          <h1>Jeremy Robson</h1>
+        </div>
+      </div>
+      <div class="cards__time-selection">
+        <button class="cards__time-button" data-period="daily">Daily</button>
+        <button class="cards__time-button" data-period="weekly" active>Weekly</button>
+        <button class="cards__time-button" data-period="monthly">Monthly</button>
+      </div>
+    </div>
+
+    <div class="cards__card --work" data-type="activity" >
+      <div class="cards__info-container">
+        <div class="cards__card-header-block">
+          <h2>Work</h2>
+          <img src="./images/icon-ellipsis.svg">
+        </div>
+        <div class="cards__hours-block">
+          <div class="cards__time-block">
+            <span class="cards__hours-main">...</span>
+            <span class="cards__hours-previous">...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards__card --play" data-type="activity">
+      <div class="cards__info-container">
+        <div class="cards__card-header-block">
+          <h2>Play</h2>
+          <img src="./images/icon-ellipsis.svg">
+        </div>
+        <div class="cards__hours-block">
+          <div class="cards__time-block weekly">
+            <span class="cards__hours-main">...</span>
+            <span class="cards__hours-previous">...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards__card --study" data-type="activity">
+      <div class="cards__info-container">
+        <div class="cards__card-header-block">
+          <h2>Study</h2>
+          <img src="./images/icon-ellipsis.svg">
+        </div>
+        <div class="cards__hours-block">
+          <div class="cards__time-block weekly">
+            <span class="cards__hours-main">...</span>
+            <span class="cards__hours-previous">...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards__card --exercise" data-type="activity">
+      <div class="cards__info-container">
+        <div class="cards__card-header-block">
+          <h2>Exercise</h2>
+          <img src="./images/icon-ellipsis.svg">
+        </div>
+        <div class="cards__hours-block">
+          <div class="cards__time-block weekly">
+            <span class="cards__hours-main">...</span>
+            <span class="cards__hours-previous">...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards__card --social" data-type="activity">
+      <div class="cards__info-container">
+        <div class="cards__card-header-block">
+          <h2>Social</h2>
+          <img src="./images/icon-ellipsis.svg">
+        </div>
+        <div class="cards__hours-block">
+          <div class="cards__time-block weekly">
+            <span class="cards__hours-main">...</span>
+            <span class="cards__hours-previous">...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards__card --self-care" data-type="activity">
+      <div class="cards__info-container">
+        <div class="cards__card-header-block">
+          <h2>Self Care</h2>
+          <img src="./images/icon-ellipsis.svg">
+        </div>
+        <div class="cards__hours-block">
+          <div class="cards__time-block weekly">
+            <span class="cards__hours-main">...</span>
+            <span class="cards__hours-previous">...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </main>
+</body>
+
+</html>
